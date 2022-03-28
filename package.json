@@ -1,0 +1,55 @@
+{
+  "name": "Bill-IFD-HW-4",
+  "version": "1.0.0",
+  "description": "Bill Sendewicz's IFD HW 4",
+  "repository": "git@github.com:Stackeduary/Interactive-Front-End-Development-HW-4.git",
+  "author": "Bill Sendewicz",
+  "license": "MIT",
+  "devDependencies": {
+    "@babel/core": "^7.17.5",
+    "@babel/eslint-parser": "^7.13.4",
+    "@babel/plugin-proposal-object-rest-spread": "^7.13.0",
+    "@babel/preset-env": "^7.13.5",
+    "@babel/preset-react": "^7.16.7",
+    "@babel/register": "^7.13.0",
+    "@rollup/plugin-babel": "^5.3.0",
+    "@rollup/plugin-commonjs": "^17.1.0",
+    "@rollup/plugin-node-resolve": "^11.2.0",
+    "@testing-library/jest-dom": "^5.16.2",
+    "archiver": "^5.3.0",
+    "eslint": "^7.20.0",
+    "eslint-config-google": "^0.14.0",
+    "eslint-plugin-import": "^2.22.1",
+    "jest": "^27.4.7",
+    "jsdom": "^19.0.0",
+    "postcss": "^8.2.6",
+    "postcss-import": "^14.0.0",
+    "rollup": "^2.39.1",
+    "rollup-plugin-copy": "^3.4.0",
+    "rollup-plugin-livereload": "^2.0.0",
+    "rollup-plugin-postcss": "^4.0.0",
+    "rollup-plugin-serve": "^1.1.0"
+  },
+  "scripts": {
+    "build": "rollup --config rollup.config.js",
+    "build:watch": "rollup --config rollup.config.js --watch",
+    "lint": "eslint src",
+    "start": "rollup --config rollup.config.js --watch --environment START_BROWSER:true",
+    "prestart": "eslint --ignore-pattern src/",
+    "test": "jest",
+    "test:watch": "jest --watch"
+  },
+  "jest": {
+    "testEnvironment": "jsdom"
+  },
+  "browserslist": [
+    "> 5%"
+  ],
+  "dependencies": {
+    "@rollup/plugin-replace": "^4.0.0",
+    "eslint-plugin-react": "^7.29.3",
+    "prop-types": "^15.8.1",
+    "react": "^17.0.2",
+    "react-dom": "^17.0.2"
+  }
+}

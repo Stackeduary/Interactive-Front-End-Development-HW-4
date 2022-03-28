@@ -1,0 +1,12 @@
+node_modules
+zipHomework.js
+*.log
+public/*.js
+*.map
+public/*.map
+coverage
+.cache
+.env
+.vscode
+*.txt
+*.zip

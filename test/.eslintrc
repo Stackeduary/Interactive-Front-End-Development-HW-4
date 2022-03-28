@@ -1,0 +1,13 @@
+{
+  "env": {
+    "jest": true
+  },
+  "globals": {
+    "expect": true
+  },
+  "rules": {
+    "no-console": "off",
+    "semi": ["error", "never"],
+    "indent": ["error", 4]
+  }
+}

@@ -1,0 +1,38 @@
+{
+  "parser": "@babel/eslint-parser",
+  "parserOptions": {
+      "ecmaFeatures": {
+          "jsx": true
+      }
+  },
+  "env": {
+      "browser": true
+  },
+  "ignorePatterns": ["public/"],
+  "plugins": ["import", "react"],
+  "extends": [
+      "eslint:recommended",
+      "google",
+      "plugin:import/errors",
+      "plugin:import/warnings",
+      "plugin:react/recommended"
+  ],
+  "rules": {
+      "max-len": ["error", 150],
+      "require-jsdoc": "off",
+      "comma-dangle": "off",
+      "linebreak-style": 0,
+      "semi": ["error", "never"],
+      "indent": ["error", 4],
+      "eol-last": 0,
+      "react/react-in-jsx-scope": "off",
+      "no-console": "warn",
+      "no-inline-comments": "warn",
+      "no-unused-vars": "warn"
+  },
+  "settings": {
+      "react": {
+          "version": "detect"
+      }
+  }
+}
